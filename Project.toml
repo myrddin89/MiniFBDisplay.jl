@@ -1,0 +1,4 @@
+name = "MiniFBDisplay"
+uuid = "4da5cd1f-f03f-44dd-8ff5-2e5512c1e77f"
+authors = ["Nicola Mosco <nicola.mosco@gmail.com>"]
+version = "0.1.0"
