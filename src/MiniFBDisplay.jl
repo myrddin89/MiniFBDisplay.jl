@@ -25,7 +25,7 @@ function Base.display(d::MiniFBDisplayType, m::MIME"image/png", x)
                 break
             end
             yield()
-            sleep(0.05)
+            sleep(0.08)
         end
     end
 end
