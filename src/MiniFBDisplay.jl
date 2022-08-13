@@ -13,7 +13,7 @@ function Base.display(d::MiniFBDisplayType, m::MIME"image/png", x)
     show(io, m, x)
     img = load(io)
     img_height, img_width = size(img)
-    ratio = min(1, 600 / img_height, 600 / img_width)
+    ratio = min(1, 1000 / img_height, 1000 / img_width)
     img_buffer = imresize(img; ratio) .|> ARGB32
     win_height, win_width = size(img_buffer)
     window = mfb_open_ex("MiniFB Display", win_width, win_height, MiniFB.WF_RESIZABLE)
